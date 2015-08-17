@@ -1,0 +1,25 @@
+{
+  "categories" : [
+    {
+      "title": "Mail",
+      "subtitle": "We want to learn how to foobar"
+    }
+  ],
+  "buckets" : [
+    {
+      "category": "Mail",
+      "tasks": {
+        "done": [
+          "Use better stamps"
+        ],
+        "doing": [
+          "Work on our handwriting"
+        ],
+        "couldDo": [
+          "Use A4 envelopes",
+          "Use a courier"
+        ]
+      }
+    }
+  ]
+}
