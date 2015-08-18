@@ -25,7 +25,7 @@
           <div class="form-group">
             <input required="required" class="form-control" placeholder="A new task" ng-model="newTask">
           </div>
-          <button ng-disabled="!newTaskForm.$valid || newTaskForm.$pristine" type="submit" class="btn btn-default" ng-click="goal.tasks.push({description: newTask, status: 'doing'})">Add</button>
+          <button ng-disabled="!newTaskForm.$valid || newTaskForm.$pristine" type="submit" class="btn btn-default" ng-click="addTask(goal, newTask)">Add</button>
         </form>
       </div>
       <div class="tasks">

@@ -24,7 +24,7 @@ describe('Controller: MainCtrl', function () {
     expect(scope.goals).toBe('goals');
   });
 
-  describe('tasks', function () {
+  describe('when displaying tasks', function () {
     var allTasks = [
       {
         "description": "Use better stamps",
@@ -57,5 +57,19 @@ describe('Controller: MainCtrl', function () {
       expect(currentTasks[0].status).toBe('doing');
       expect(currentTasks[1].status).toBe('doing');
     });
+  });
+
+  describe('when adding a task', function () {
+    it('should use the text supplied as the description', function () {
+      var goal = { tasks: []};
+      scope.addTask(goal, 'a new task');
+      expect(goal.tasks.pop().description).toBe('a new task');
+    });
+
+    it('should default the status to doing', function () {
+      var goal = { tasks: []};
+      scope.addTask(goal, 'a new task');
+      expect(goal.tasks.pop().status).toBe('doing');
+    })
   });
 });

@@ -17,4 +17,11 @@ angular.module('goalsApp')
         return task.status === 'doing';
       });
     };
+
+    $scope.addTask = function (goal, description) {
+      goal.tasks.push({
+        description: description,
+        status: 'doing'
+      });
+    };
   });
