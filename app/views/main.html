@@ -12,20 +12,30 @@
         </div>
     </div>
     <div class="details" ng-show="showDetails">
-      <strong ng-show="getCurrentTasks(goal.tasks).length > 0">What we're doing now</strong>
-      <div ng-repeat="task in getCurrentTasks(goal.tasks)">
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" ng-model="task.status" ng-true-value="'done'" ng-false-value="'doing'"> {{task.description}}
-          </label>
+      <div class="tasks">
+        <strong ng-show="getCurrentTasks(goal.tasks).length > 0">What we're doing now</strong>
+        <div ng-repeat="task in getCurrentTasks(goal.tasks)">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" ng-model="task.status" ng-true-value="'done'" ng-false-value="'doing'"> {{task.description}}
+            </label>
+          </div>
         </div>
+        <form class="form-inline" name="newTaskForm">
+          <div class="form-group">
+            <input required="required" class="form-control" placeholder="A new task" ng-model="newTask">
+          </div>
+          <button ng-disabled="!newTaskForm.$valid || newTaskForm.$pristine" type="submit" class="btn btn-default" ng-click="goal.tasks.push({description: newTask, status: 'doing'})">Add</button>
+        </form>
       </div>
-      <strong ng-show="getCompletedTasks(goal.tasks).length > 0">What we've done</strong>
-      <div class="done" ng-repeat="task in getCompletedTasks(goal.tasks)">
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" ng-model="task.status" ng-true-value="'done'" ng-false-value="'doing'"> {{task.description}}
-          </label>
+      <div class="tasks">
+        <strong ng-show="getCompletedTasks(goal.tasks).length > 0">What we've done</strong>
+        <div class="done" ng-repeat="task in getCompletedTasks(goal.tasks)">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" ng-model="task.status" ng-true-value="'done'" ng-false-value="'doing'"> {{task.description}}
+            </label>
+          </div>
         </div>
       </div>
     </div>
