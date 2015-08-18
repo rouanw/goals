@@ -1,15 +1,11 @@
 {
-  "categories" : [
-    {
-      "title": "Mail",
-      "subtitle": "We want to learn how to foobar",
-      "color": "#FF00FF"
-    }
-  ],
   "goals" : [
     {
       "name": "We want more awesomeness",
-      "category": "Mail",
+      "category": {
+        "name": "Mail",
+        "color": "#EF5BA1"
+      },
       "tasks": {
         "done": [
           "Use better stamps"
@@ -25,7 +21,29 @@
     },
     {
       "name": "We want more awesomeness",
-      "category": "Mail",
+      "category": {
+        "name": "Mail",
+        "color": "#B5B935"
+      },
+      "tasks": {
+        "done": [
+          "Use better stamps"
+        ],
+        "doing": [
+          "Work on our handwriting"
+        ],
+        "couldDo": [
+          "Use A4 envelopes",
+          "Use a courier"
+        ]
+      }
+    },
+    {
+      "name": "We want more awesomeness",
+      "category": {
+        "name": "Mail",
+        "color": "#26BDCF"
+      },
       "tasks": {
         "done": [
           "Use better stamps"

@@ -2,8 +2,8 @@
   <h3>Current Goals</h3>
   {{theGoal}}
   <div class="goal col-md-4" ng-repeat="goal in goals" ng-class="{'highlight': showDetails, 'col-md-12': showDetails}">
-    <div class="focus">
-        <div class="category">{{goal.category}}</div>
+    <div class="focus" ng-style="{'background-color': goal.category.color}">
+        <div class="category">{{goal.category.name}}</div>
         <div>{{goal.name}}</div>
         <div class="click-area" ng-click="showDetails = !showDetails">
           <span ng-class="showDetails ? 'glyphicon-chevron-up' : 'glyphicon-chevron-down'" class="glyphicon clickable"></span>
