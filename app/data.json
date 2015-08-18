@@ -6,18 +6,24 @@
         "name": "Mail",
         "color": "#EF5BA1"
       },
-      "tasks": {
-        "done": [
-          "Use better stamps"
-        ],
-        "doing": [
-          "Work on our handwriting"
-        ],
-        "couldDo": [
-          "Use A4 envelopes",
-          "Use a courier"
-        ]
-      }
+      "tasks": [
+        {
+            "description": "Use better stamps",
+            "status": "done"
+        },
+        {
+            "description": "Use a courier",
+            "status": "done"
+        },
+        {
+          "description": "Work on our handwriting",
+          "status": "doing"
+        },
+        {
+          "description": "Use A4 envelopes",
+          "status": "doing"
+        }
+      ]
     },
     {
       "name": "We want more awesomeness",
@@ -25,18 +31,24 @@
         "name": "Mail",
         "color": "#B5B935"
       },
-      "tasks": {
-        "done": [
-          "Use better stamps"
-        ],
-        "doing": [
-          "Work on our handwriting"
-        ],
-        "couldDo": [
-          "Use A4 envelopes",
-          "Use a courier"
-        ]
-      }
+      "tasks": [
+        {
+            "description": "Use better stamps",
+            "status": "done"
+        },
+        {
+            "description": "Use a courier",
+            "status": "done"
+        },
+        {
+          "description": "Work on our handwriting",
+          "status": "doing"
+        },
+        {
+          "description": "Use A4 envelopes",
+          "status": "doing"
+        }
+      ]
     },
     {
       "name": "We want more awesomeness",
@@ -44,18 +56,24 @@
         "name": "Mail",
         "color": "#26BDCF"
       },
-      "tasks": {
-        "done": [
-          "Use better stamps"
-        ],
-        "doing": [
-          "Work on our handwriting"
-        ],
-        "couldDo": [
-          "Use A4 envelopes",
-          "Use a courier"
-        ]
-      }
+      "tasks": [
+        {
+            "description": "Use better stamps",
+            "status": "done"
+        },
+        {
+            "description": "Use a courier",
+            "status": "done"
+        },
+        {
+          "description": "Work on our handwriting",
+          "status": "doing"
+        },
+        {
+          "description": "Use A4 envelopes",
+          "status": "doing"
+        }
+      ]
     },
     {
       "name": "We want more awesomeness",
@@ -63,18 +81,24 @@
         "name": "Mail",
         "color": "#F78F31"
       },
-      "tasks": {
-        "done": [
-          "Use better stamps"
-        ],
-        "doing": [
-          "Work on our handwriting"
-        ],
-        "couldDo": [
-          "Use A4 envelopes",
-          "Use a courier"
-        ]
-      }
+      "tasks": [
+        {
+            "description": "Use better stamps",
+            "status": "done"
+        },
+        {
+            "description": "Use a courier",
+            "status": "done"
+        },
+        {
+          "description": "Work on our handwriting",
+          "status": "doing"
+        },
+        {
+          "description": "Use A4 envelopes",
+          "status": "doing"
+        }
+      ]
     },
     {
       "name": "We want more awesomeness",
@@ -82,18 +106,24 @@
         "name": "Mail",
         "color": "#00B56E"
       },
-      "tasks": {
-        "done": [
-          "Use better stamps"
-        ],
-        "doing": [
-          "Work on our handwriting"
-        ],
-        "couldDo": [
-          "Use A4 envelopes",
-          "Use a courier"
-        ]
-      }
+      "tasks": [
+        {
+            "description": "Use better stamps",
+            "status": "done"
+        },
+        {
+            "description": "Use a courier",
+            "status": "done"
+        },
+        {
+          "description": "Work on our handwriting",
+          "status": "doing"
+        },
+        {
+          "description": "Use A4 envelopes",
+          "status": "doing"
+        }
+      ]
     },
     {
       "name": "We want more awesomeness",
@@ -101,18 +131,24 @@
         "name": "Mail",
         "color": "#9E785F"
       },
-      "tasks": {
-        "done": [
-          "Use better stamps"
-        ],
-        "doing": [
-          "Work on our handwriting"
-        ],
-        "couldDo": [
-          "Use A4 envelopes",
-          "Use a courier"
-        ]
-      }
+      "tasks": [
+        {
+            "description": "Use better stamps",
+            "status": "done"
+        },
+        {
+            "description": "Use a courier",
+            "status": "done"
+        },
+        {
+          "description": "Work on our handwriting",
+          "status": "doing"
+        },
+        {
+          "description": "Use A4 envelopes",
+          "status": "doing"
+        }
+      ]
     }
   ]
 }
