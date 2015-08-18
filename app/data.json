@@ -2,11 +2,29 @@
   "categories" : [
     {
       "title": "Mail",
-      "subtitle": "We want to learn how to foobar"
+      "subtitle": "We want to learn how to foobar",
+      "color": "#FF00FF"
     }
   ],
-  "buckets" : [
+  "goals" : [
     {
+      "name": "We want more awesomeness",
+      "category": "Mail",
+      "tasks": {
+        "done": [
+          "Use better stamps"
+        ],
+        "doing": [
+          "Work on our handwriting"
+        ],
+        "couldDo": [
+          "Use A4 envelopes",
+          "Use a courier"
+        ]
+      }
+    },
+    {
+      "name": "We want more awesomeness",
       "category": "Mail",
       "tasks": {
         "done": [
