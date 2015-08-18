@@ -56,6 +56,63 @@
           "Use a courier"
         ]
       }
+    },
+    {
+      "name": "We want more awesomeness",
+      "category": {
+        "name": "Mail",
+        "color": "#F78F31"
+      },
+      "tasks": {
+        "done": [
+          "Use better stamps"
+        ],
+        "doing": [
+          "Work on our handwriting"
+        ],
+        "couldDo": [
+          "Use A4 envelopes",
+          "Use a courier"
+        ]
+      }
+    },
+    {
+      "name": "We want more awesomeness",
+      "category": {
+        "name": "Mail",
+        "color": "#00B56E"
+      },
+      "tasks": {
+        "done": [
+          "Use better stamps"
+        ],
+        "doing": [
+          "Work on our handwriting"
+        ],
+        "couldDo": [
+          "Use A4 envelopes",
+          "Use a courier"
+        ]
+      }
+    },
+    {
+      "name": "We want more awesomeness",
+      "category": {
+        "name": "Mail",
+        "color": "#9E785F"
+      },
+      "tasks": {
+        "done": [
+          "Use better stamps"
+        ],
+        "doing": [
+          "Work on our handwriting"
+        ],
+        "couldDo": [
+          "Use A4 envelopes",
+          "Use a courier"
+        ]
+      }
     }
   ]
 }
