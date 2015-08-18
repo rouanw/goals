@@ -17,14 +17,8 @@
   }
 }
 
-ul.done {
+.done {
   color: #808080;
-
-  li {
-    &:before {
-      content:"\2713\0020";
-    }
-  }
 }
 
 .click-area {

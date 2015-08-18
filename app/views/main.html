@@ -12,14 +12,22 @@
         </div>
     </div>
     <div class="details" ng-show="showDetails">
-      <strong>What we're doing now</strong>
-      <ul ng-repeat="task in getCurrentTasks(goal.tasks)">
-        <li>{{task.description}}</li>
-      </ul>
-      <strong>What we've done</strong>
-      <ul class="done list-unstyled" ng-repeat="task in getCompletedTasks(goal.tasks)">
-        <li>{{task.description}}</li>
-      </ul>
+      <strong ng-show="getCurrentTasks(goal.tasks).length > 0">What we're doing now</strong>
+      <div ng-repeat="task in getCurrentTasks(goal.tasks)">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" ng-model="task.status" ng-true-value="'done'" ng-false-value="'doing'"> {{task.description}}
+          </label>
+        </div>
+      </div>
+      <strong ng-show="getCompletedTasks(goal.tasks).length > 0">What we've done</strong>
+      <div class="done" ng-repeat="task in getCompletedTasks(goal.tasks)">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" ng-model="task.status" ng-true-value="'done'" ng-false-value="'doing'"> {{task.description}}
+          </label>
+        </div>
+      </div>
     </div>
   </div>
 </div>
