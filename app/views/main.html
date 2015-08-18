@@ -13,8 +13,12 @@
     </div>
     <div class="details" ng-show="showDetails">
       <strong>What we're doing now</strong>
-      <ul class="doing" ng-repeat="doing in goal.tasks.doing">
-        <li>{{doing}}</li>
+      <ul ng-repeat="task in goal.tasks.doing">
+        <li>{{task}}</li>
+      </ul>
+      <strong>What we've done</strong>
+      <ul class="done list-unstyled" ng-repeat="task in goal.tasks.done">
+        <li>{{task}}</li>
       </ul>
     </div>
   </div>

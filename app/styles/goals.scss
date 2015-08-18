@@ -1,6 +1,9 @@
 .goal {
   padding: 1em;
   margin-top: 1em;
+  &.highlight {
+    border: 1px solid #808080;
+  }
   .focus {
     min-width: 10em;
     min-height: 2em;
@@ -9,8 +12,18 @@
   .category {
     font-weight: bold;
   }
-  &.highlight {
-    border: 1px solid #808080;
+  .details {
+    margin-top: 1em;
+  }
+}
+
+ul.done {
+  color: #808080;
+
+  li {
+    &:before {
+      content:"\2713\0020";
+    }
   }
 }
 
