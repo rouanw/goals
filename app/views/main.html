@@ -1,4 +1,24 @@
-<div class="row">
+<p>
+  <div class="input-group">
+   <span class="input-group-addon" id="basic-addon1">
+     <label for="url">Goals URL</label>
+   </span>
+   <input id="url" type="text" ng-model="goalsUrl" class="form-control">
+   <span class="input-group-btn">
+     <button class="btn btn-default" ng-click="getGoals(goalsUrl)">Go</button>
+   </span>
+  </div>
+</p>
+
+<div class="legend" ng-hide="hideLegend || !goals">
+  <h3>Themes</h3>
+  <div class="row" ng-repeat="category in categories">
+    <div class="category col-md-3" style="background-color: {{category.color}}">{{category.name}}</div>
+  </div>
+  <a ng-click="hideLegend = !hideLegend">Toggle legend</a>
+</div>
+
+<div class="row" ng-show="goals">
   <h3>Current Goals</h3>
   {{theGoal}}
   <div class="goal col-md-4" ng-repeat="goal in goals" ng-class="{'highlight': showDetails, 'col-md-12': showDetails}">

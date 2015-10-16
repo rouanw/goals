@@ -10,18 +10,62 @@ describe('Controller: MainCtrl', function () {
 
   beforeEach(inject(function ($controller, $rootScope, $httpBackend) {
     httpBackend = $httpBackend;
-    httpBackend.when('GET', 'data.json')
-                           .respond({goals: 'goals'});
-    scope = $rootScope.$new()
+    scope = $rootScope.$new();
     MainCtrl = $controller('MainCtrl', {
       $scope: scope
     });
   }));
 
-  it('should fetch data and set buckets on the scope', function () {
-    httpBackend.expectGET('data.json').and;
-    httpBackend.flush();
-    expect(scope.goals).toBe('goals');
+
+  describe('when retrieving goals', function () { 
+    var response = {
+        goals: [
+          {
+            category: {
+              "name": "Mail",
+              "color": "#EF5BA1"
+            },
+          },
+          {
+            category: {
+              "name": "Mail",
+              "color": "#EF5BA1"
+            },
+          },
+          {
+            category: {
+              "name": "Something else",
+              "color": "#ABC123"
+            }
+          }
+        ]
+      };
+
+    it('should fetch data and set buckets on the scope', function () {
+      httpBackend.when('GET', 'someUrl').respond({goals: 'goals'});
+      scope.getGoals('someUrl');
+      httpBackend.expectGET('someUrl');
+      httpBackend.flush();
+      expect(scope.goals).toBe('goals');
+    });
+    
+    it('should list categories', function () {
+      httpBackend.when('GET', 'url')
+                           .respond(response);
+      scope.getGoals('url');
+      httpBackend.flush();
+      expect(scope.categories).toContain(response.goals[0].category);
+      expect(scope.categories).toContain(response.goals[2].category);
+    });
+
+    it('should only list unique categories', function () {
+      httpBackend.when('GET', 'url')
+                           .respond(response);
+      scope.getGoals('url');
+      httpBackend.flush();
+      expect(scope.categories.length).toBe(2);
+    });
+
   });
 
   describe('when displaying tasks', function () {

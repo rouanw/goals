@@ -2,9 +2,12 @@
 
 angular.module('goalsApp')
   .controller('MainCtrl', function ($scope, $http) {
-    $http({method: 'GET', url: 'data.json', data: {}}).then(function(result) {
-      $scope.goals = result.data.goals;
-    });
+    $scope.getGoals = function (goalsUrl) {
+        $http({method: 'GET', url: goalsUrl, data: {}}).then(function(result) {
+        $scope.goals = result.data.goals;
+        $scope.categories = _.uniq(_.map($scope.goals, 'category'), 'name');
+      });
+    };
 
     $scope.getCompletedTasks = function (tasks) {
       return _.filter(tasks, function (task) {
