@@ -33,28 +33,37 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">goals</a>
+            <a class="navbar-brand" href="#/">our goals</a>
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
               <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
             </ul>
           </div>
         </div>
       </div>
+      <div class="legend">
+        <div class="row" ng-hide="hideLegend">
+          <div class="category col-md-3" style="background-color: #26BDCF">Some category: catchy description</div>
+          <div class="category col-md-3" style="background-color: #F78F31">Some category: catchy description</div>
+          <div class="category col-md-3" style="background-color: #B5B935">Some category: catchy description</div>
+          <div class="category col-md-3" style="background-color: #00B56E">Some category: catchy description</div>
+          <div class="category col-md-3" style="background-color: #EF5BA1">Some category: catchy description</div>
+          <div class="category col-md-3" style="background-color: #9E785F">Some category: catchy description</div>
+        </div>
+        <a ng-click="hideLegend = !hideLegend">Toggle legend</a>
+      </div>
     </div>
 
     <div class="container">
-    <div ng-view=""></div>
+      <div ng-view=""></div>
     </div>
 
     <div class="footer">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p><span class="glyphicon glyphicon glyphicon-user"></span> How do we get better at delivering value to our customers?</p>
       </div>
     </div>
 
